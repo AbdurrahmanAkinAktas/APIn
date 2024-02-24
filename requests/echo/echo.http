@@ -1,0 +1,31 @@
+GET http://localhost:{{port}}/echo/int/5
+
+> ../tests/response_200_test.js
+
+###
+
+GET http://localhost:{{port}}/echo/string/asd
+
+> ../tests/response_200_test.js
+
+###
+
+GET http://localhost:{{port}}/echo/float/5
+
+> ../tests/response_200_test.js
+
+###
+
+POST http://localhost:{{port}}/echo/body/plain
+Content-Type: application/json
+
+{
+  "test": 123,
+  "123": "test"
+}
+
+> ../tests/response_200_test.js
+
+###
+
+

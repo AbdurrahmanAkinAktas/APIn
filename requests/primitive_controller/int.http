@@ -1,0 +1,7 @@
+GET http://localhost:{{port}}/primitive/int/random
+
+> ../tests/response_200_test.js
+###
+GET http://localhost:{{port}}/primitive/int/random/1000/2000
+
+> ../tests/response_200_test.js

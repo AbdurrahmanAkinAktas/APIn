@@ -1,0 +1,17 @@
+GET http://localhost:{{port}}/http/200
+
+> ../tests/response_200_test.js
+
+###
+
+GET http://localhost:{{port}}/http/300
+
+###
+
+GET http://localhost:{{port}}/http/400
+
+###
+
+GET http://localhost:{{port}}/http/500
+
+###

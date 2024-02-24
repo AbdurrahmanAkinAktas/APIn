@@ -1,0 +1,13 @@
+GET http://localhost:{{port}}/primitive/bool/random
+
+> ../tests/response_200_test.js
+
+###
+GET http://localhost:{{port}}/primitive/bool/true
+
+> ../tests/response_200_test.js
+
+###
+GET http://localhost:{{port}}/primitive/bool/false
+
+> ../tests/response_200_test.js

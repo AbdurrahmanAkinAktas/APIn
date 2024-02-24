@@ -1,0 +1,28 @@
+GET http://localhost:{{port}}/log/textforlogging
+
+> ../tests/response_200_test.js
+
+###
+
+POST http://localhost:{{port}}/log
+Content-Type: application/json
+
+{
+  "test": 123,
+  "123": "test"
+}
+
+> ../tests/response_200_test.js
+
+###
+
+POST http://localhost:{{port}}/log
+Content-Type: test/xml
+
+<test>asd</test>
+
+> ../tests/response_200_test.js
+
+###
+
+
