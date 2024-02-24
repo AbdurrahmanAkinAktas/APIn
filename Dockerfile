@@ -14,4 +14,7 @@ RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 COPY ./app /code/app
 
 #
+EXPOSE 2466
+
+#
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "2466"]
